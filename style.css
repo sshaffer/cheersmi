@@ -1,0 +1,315 @@
+/*
+
+Website Color Scheme
+#FF8C00 - Orange
+#539bb4 - Blue
+#FFDBAF - lightest
+
+*/
+
+/* Display HTML5 Structural Elements as blocks - keep */
+/* Recommended from textbook to assit in I.E. */
+
+article, aside, figure, figcaption, footer, hgroup, header,
+section, nav {
+display: block;
+}
+
+/* End Display HTML5 Structural Elements as blocks - keep */
+
+/* Remove image boarders for IE */
+
+a img {
+	border: none; 
+}
+
+/* Set selection colors - blue is old and boring - keep */
+::selection
+{
+color:#FF8C00;
+}
+::-moz-selection
+{
+color:#FF8C00;
+}
+
+/* Start body styles */
+
+body {
+	background-image: url('images/brick.jpg');
+	background-repeat: repeat;
+}
+
+header {
+	margin-left: 135px;
+}
+
+#container {
+	background-image: url('images/chalkboard3.png');
+	border: 3px solid #915000;
+	width: 1024px;
+	padding-left: 5px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+
+}
+
+
+#brew_width {
+	width: 600px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+#header_beer_image:hover {
+	-o-transform: rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform:rotate(-10deg);
+	opacity: 1.0;
+}
+
+
+/* Header Navigation List Style */
+
+header nav {
+   height: 42px;
+}
+
+header nav li {
+   display: block;
+   float: left;
+   text-align: center;
+   width: 15%;
+}
+
+header nav li a {
+   color: white;
+   font-size: 2em;
+   font-family: 'Just Me Again Down Here', Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+header nav li a:hover {
+   color: #FF8C00;
+   text-decoration: underline;
+}
+
+table {
+	color: white;
+	margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: .85em;
+}
+
+.beer_table {
+	border: 1px solid white;
+}
+
+
+thead {
+	background-color: #FFB861;
+	color: black;
+}
+
+table caption {
+	font-size: 2em;
+	color:#539bb4;
+	font-family: 'Just Me Again Down Here', "Trebuchet MS"; 
+}
+
+
+td a {
+	color: white;
+	text-decoration: none;
+}
+
+
+td a:hover {
+	color: #539bb4;
+}
+
+td a:visited {
+	color: #FF8C00;
+}
+
+a {
+	color: white;
+	text-decoration: underline ;
+}
+
+a:hover {
+	color: #539bb4;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #FF8C00;
+}
+
+p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: .85em;
+	margin-left: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+#tap {
+	float: left;
+	width: 150px;
+	margin-left: 15px;
+	padding-right: 10px;
+}
+
+.img_left_float {
+	float: left;
+	margin-right: 10px;
+}
+
+.img_right_float {
+	float: right;
+	margin-left: 10px;
+}
+
+.fancyOrange { 
+	font-family: 'Just Me Again Down Here', cursive; 
+	color: #FF8C00;
+	}
+
+.fancy {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	}
+
+.h1_fancy {
+	font-size: 2em;
+	color:#539bb4;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+strong {
+	color: #539bb4;
+}
+
+footer {
+	padding: 2px 0;
+	position: relative;
+	color: white;
+	}
+
+footer a {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   color: white;
+   text-decoration: none;
+}
+
+footer a:hover {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   color: #FF8C00;
+   text-decoration: underline;
+}
+
+p.date {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	border-bottom-width: 0px;
+	border-bottom-style: none;
+}
+
+/* Begin Brewery Page Style */
+
+
+.brew_img_center {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 125px;
+}
+
+#brew_sampler {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 275px;
+}
+
+
+#brew_intro_text {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: 1em;
+    margin-right: 15px;
+}
+
+.brew_text {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: .85em;
+	margin-left: 10px;
+}
+
+/*Photo Credit on Brewery Page 
+Credit for effect - http://stackoverflow.com/questions/1183633/can-you-overlay-a-transparent-div-on-an-image
+*/
+      div.imageSub { position: relative; }
+      div.imageSub img { z-index: 1; }
+      div.imageSub div {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom: 0;
+        padding: 4px;
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        overflow: hidden;
+      }
+      div.imageSub div.blackbg {
+        z-index: 2;
+        background-color: #000;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+        opacity: 0.8;
+      }
+      div.imageSub div.label {
+        z-index: 3;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: white;
+      }
+
+    
+/* styles for the Festivals page */
+
+.h1_fancyLeft {
+	font-size: 2em;
+	color:#539bb4;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 100px;
+}
+
+.body_textFestivals {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: .85em;
+	margin-left: 125px;
+}
+
+/* Styes for the Contact page */
+
+#form_table {
+	width: 557px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,118 @@
+<!doctype HTML>
+<head>
+<title>Cheer's Michigan -- Contact us, we'd love to hear from you</title>
+	<meta charset="utf-8">
+		<meta name="description" content="Cheers Michigan is a site with the purpose of providing a basic guide to the variety of beers, breweries, and festivals in Michigan ">
+    <meta name="keywords" content="Michigan beer, craft beer, festivals ">
+	<script src="modernizr-1.5.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here' rel='stylesheet' type='text/css'>
+
+<link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="container">
+<header>
+	<img src="images/beermug.png" alt="beer mug" width="175" id="header_beer_image">
+	<img src="images/cheers.png" alt="Cheers Michigan">
+	<nav>
+	<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="beer101.html">Beer 101</a></li>
+    <li><a href="breweries.html">Breweries</a></li>
+    <li><a href="festivals.html">Festivals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+	</ul>
+	</nav>
+</header>
+<section>
+<hr>
+<div id="brew_width">
+<h1 class="h1_fancy">hello,</h1>
+<p>We’d love to hear from you. Drop us a line. Tell us about your Michigan beer experiences, or request more information. </p>
+
+ <form action="MAILTO:sshaff04@baker.edu" method="post" enctype="text/plain">
+     <table id="form_table">
+       <tr>
+         <th colspan="2" scope="col">To request further information, please fill out this form. </th>
+       </tr>
+       <tr>
+         <td><input type="hidden" name="required" id="required">
+           First Name*</td>
+         <td><input name="first_name" type="text" id="first_name" size="40" maxlength="100" placeholder="First Name"></td>
+       </tr>
+       <tr>
+         <td>Last Name*</td>
+         <td><input name="last_name" type="text" id="last_name" size="40" maxlength="100" placeholder="Last Name"></td>
+       </tr>
+       <tr>
+         <td>Email* - Won't be shared with 3rd parties</td>
+         <td><input name="email" type="email" id="email" size="40" maxlength="100" placeholder="something@something.com"></td>
+       </tr>
+       <tr>
+         <td>I am interested in information about:</td>
+         <td><label>
+           <span>
+           <input type="checkbox" name="information" id="miBreweries" value="miBreweries">
+           MI. Breweries
+           </span></label>
+           <span><br>
+           <label>
+             <input type="checkbox" name="information" id="miBeer" value="miBeer" >
+             MI. Beers</label>
+           </span>
+           <label></label></td>
+       </tr>
+       <tr>
+         <td>Are you 21?</td>
+         <td><p>
+           <label>
+             <span>
+             <input type="radio" name="AreYou21" value="positive" id="21_1">
+             Yes</span></label>
+           <span><br>
+           <label>
+             <input type="radio" name="AreYou21" value="negative" id="21_0">
+             No</label>
+           </span> <br>
+         </p></td>
+       </tr>
+       <tr>
+        <td>Not 21? When will you be?</td>
+         <td><input name="willbe21" id="willbe21" type="date" placeholder="mm/dd/yyyy"></td>
+       </tr>
+       <tr>
+         <td>I learned about you from:</td>
+         <td><select name="reference" id="reference">
+           <option value="none">Select From List:</option>
+           <option value="friend">From a friend</option>
+           <option value="internet">Internet search</option>
+           <option value="radio">Radio ad</option>
+           <option value="stumbled">Stumbled upon</option>
+         </select></td>
+       </tr>
+       <tr>
+         <td><label>Comments:</label>
+           &nbsp;</td>
+         <td><textarea name="comments" cols="50" rows="4" id="comments" placeholder="We hope you like this site. Type comments or experiences here"></textarea></td>
+       </tr>
+       <tr>
+         <td>&nbsp;</td>
+         <td><input type="submit" name="submit" id="submit" value="Submit">
+           <input type="reset" name="Reset" id="button" value="Reset"></td>
+       </tr>
+       <tr>
+         <td colspan="2">*Denotes Required fields</td>
+       </tr>
+       </form>
+     </table>
+</div>
+</section>
+</div>
+<footer>
+<p class="date">Copyright 2013 - e-mail our <a href="mailto:sshaff04@baker.edu">site manager</a> directly</p>
+</footer>
+</body>
+</html>
+
+
